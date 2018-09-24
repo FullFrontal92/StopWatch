@@ -7,34 +7,38 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/time_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="123dp" />
+        android:text=""
+        android:textSize="92sp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/start_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:onClick="onClickStart"
+        android:text="@string/start"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="215dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/stop_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop"
+        android:onClick="onClickStop"
+        android:text="@string/stop"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="283dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset"
+        android:onClick="onClickReset"
+        android:text="@string/reset"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="347dp" />
 </android.support.constraint.ConstraintLayout>
